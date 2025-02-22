@@ -11,7 +11,7 @@ filename = []
 for i in range(no_of_images):
     #filename.append(input("Enter the %d image name along with path and extension: " % (i + 1)))
     j=j+1
-    filename.append(f"ph_{j}.jpg" (i+1))
+    filename.append(f"ph_{j}.jpg")
 
 images = []
 for i in range(no_of_images):
@@ -22,8 +22,8 @@ for i in range(no_of_images):
 for i in range(no_of_images):
     images[i] = imutils.resize(images[i], width=400)
 
-for i in range(no_of_images):
-    images[i] = imutils.resize(images[i], height=400)
+# for i in range(no_of_images):
+#     images[i] = imutils.resize(images[i], height=400)
 
 
 panorama = Panaroma()
