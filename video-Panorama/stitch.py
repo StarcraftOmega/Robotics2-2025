@@ -9,7 +9,7 @@ no_of_images = int(input("Enter the number of images you want to concatenate(wil
 
 filename = []
 for i in range(no_of_images):
-    filename.append(f"ph_{i + 1}.jpg")
+    filename.append(f"inputs/ph_{i + 1}.jpg")
 
 images = []
 for i in range(no_of_images):
