@@ -16,8 +16,8 @@ for i in range(no_of_images):
     images.append(cv2.imread(filename[i]))
 
 # We need to modify the images width and height to keep our aspect ratio same across images
-for i in range(no_of_images):
-    images[i] = imutils.resize(images[i], width=400)
+#for i in range(no_of_images):
+#    images[i] = imutils.resize(images[i], width=400)
 
 # for i in range(no_of_images):
 #     images[i] = imutils.resize(images[i], height=400)
