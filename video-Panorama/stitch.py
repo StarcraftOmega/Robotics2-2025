@@ -3,13 +3,15 @@ import imutils
 import cv2
 
 
-no_of_images = int(input("Enter the number of images you want to concatenate: "))
-print("Enter the image names with extension in order of left to right in the way you want to concatenate: ")
+no_of_images = int(input("Enter the number of images you want to concatenate(will every immage util it recehes your number): "))
+#print("Enter the image names with extension in order of left to right in the way you want to concatenate: ")
 # like tajm1.jpg, tajm2.jpg, tajm3.jpg .... tajmn.jpg
-
+j=0
 filename = []
 for i in range(no_of_images):
-    filename.append(input("Enter the %d image name along with path and extension: " % (i + 1)))
+    #filename.append(input("Enter the %d image name along with path and extension: " % (i + 1)))
+    j=j+1
+    filename.append(f"ph_{j}.jpg"%(i+1))
 
 images = []
 for i in range(no_of_images):

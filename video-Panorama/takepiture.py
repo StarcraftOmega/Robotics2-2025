@@ -2,6 +2,16 @@ import cv2
 import os
 import time
 
+# Check if the 'inputs' folder exists, if not create it
+# If it exists, delete all files in it
+if not os.path.exists('inputs'):
+    os.makedirs('inputs')
+elif os.path.exists('inputs'):
+        for root_folder, folders, files in os.walk('inputs'):
+            for file in files:
+                file_path = os.path.join(root_folder, file)
+                os.remove(file_path)
+
 # Create an 'inputs' folder to store images if it doesn't exist
 if not os.path.exists('inputs'):
     os.makedirs('inputs')
